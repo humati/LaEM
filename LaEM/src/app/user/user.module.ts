@@ -8,6 +8,8 @@ import { faFacebook, fab } from '@fortawesome/free-brands-svg-icons';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
+import { CarouselItemComponent } from './carousel/carousel-item/carousel-item.component';
+import {CarouselModule} from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,13 @@ import { FooterComponent } from './footer/footer.component';
     UserComponent,
     CarouselComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselItemComponent
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CarouselModule
   ],
   exports: [
     UserComponent

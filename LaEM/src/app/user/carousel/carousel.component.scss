@@ -1,12 +1,19 @@
-.carousel__body {
-  display: flex;
-  justify-content: space-between;
-  .carousel__card {
+.newPostList {
+  // width: 95vw;
+  height: 58vh;
+  margin: 1vh auto;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .newPostList__item {
     border-radius: 0;
-    width: 23%;
-    height: 100%;
+    width: 100%;
+    height: 58vh;
     overflow: hidden;
     transition: left 20s;
+    // margin: 0 2vw;
+    padding: 0 2vw;
+    border: 0;
     img {
       height: 100%;
     }
@@ -14,19 +21,19 @@
     .card-img-overlay {
       top: auto;
       //   bottom: -200px;
-      left: -500px;
+      left: -600px;
       background-color: rgba(255, 255, 255, 0.8);
       width: 100%;
       height: 30%;
       border-radius: 0;
-      padding: 0;
+      padding: 0 2vw;
 
       .card-title {
         position: absolute;
         margin: 0;
         padding: 1rem;
         top: 0;
-        left: 0;
+        left: 2vw;
         max-height: 50%;
         overflow: hidden;
       }
@@ -48,9 +55,76 @@
       }
     }
   }
-  .carousel__card:hover {
+  .newPostList__item:hover {
     .card-img-overlay {
       left: 0;
     }
   }
 }
+// .carousel__item {
+//   min-height: 200px;
+//   width: 100%;
+//   background-color: var(--carousel-color-primary);
+//   color:  var(--carousel-color-white);
+//   font-size: 20px;
+//   border-radius: 8px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .carousel__slide {
+//   padding: 10px;
+// }
+// .newPostList__item {
+//   border-radius: 0;
+//   width: 100%;
+//   height: 58vh;
+//   overflow: hidden;
+//   transition: left 20s;
+//   img {
+//     height: 100%;
+//   }
+
+//   .card-img-overlay {
+//     top: auto;
+//     //   bottom: -200px;
+//     left: -500px;
+//     background-color: rgba(255, 255, 255, 0.8);
+//     width: 100%;
+//     height: 30%;
+//     border-radius: 0;
+//     padding: 0;
+
+//     .card-title {
+//       position: absolute;
+//       margin: 0;
+//       padding: 1rem;
+//       top: 0;
+//       left: 0;
+//       max-height: 50%;
+//       overflow: hidden;
+//     }
+
+//     .carousel__button {
+//       position: absolute;
+//       padding: 0 1rem;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       margin-left: auto;
+//       margin-right: auto;
+//       width: 50%;
+
+//       a {
+//         width: 100%;
+//         border-radius: 0;
+//       }
+//     }
+//   }
+// }
+// .newPostList__item:hover {
+//   .card-img-overlay {
+//     left: 0;
+//   }
+// }
